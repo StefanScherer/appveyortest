@@ -1,0 +1,6 @@
+image: Visual Studio 2019 Preview
+
+build_script:
+  - docker version
+  - docker info
+  - docker images
