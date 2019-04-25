@@ -1,6 +1,5 @@
 image: Visual Studio 2019 Preview
 
 build_script:
-  - docker version
-  - docker info
-  - docker images
+  - choco install -y packer
+  - packer build --only hyperv-iso windows_10.json
