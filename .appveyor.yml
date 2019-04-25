@@ -1,5 +1,6 @@
 image: Visual Studio 2019 Preview
 
 build_script:
+  - ps: Get-WindowsFeature
   - choco install -y packer
   - packer build --only hyperv-iso windows_10.json
