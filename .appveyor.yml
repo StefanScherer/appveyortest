@@ -4,3 +4,4 @@ build_script:
   - docker version
   - docker info
   - docker images
+  - docker run --rm -v \\.\pipe\docker_engine:\\.\pipe\docker_engine stefanscherer/docker-cli-windows docker version
